@@ -1,0 +1,25 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+
+.item4 { grid-area: item4; }
+.item5 { grid-area: footer; }
+.jalakas { grid-area: jalakas; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header item4'
+    'menu jalakas item4'
+    'menu footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
